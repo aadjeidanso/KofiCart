@@ -1,0 +1,139 @@
+/* src/styles/ProductDetails.css */
+.product-details {
+    display: flex;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+/* Product Image Styling */
+.product-image img {
+    height: 80%;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Info Styling */
+.product-info {
+    max-width: 500px;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    color: #2b3d50;
+}
+
+.product-info h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.product-info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Color Selection */
+.product-colors {
+    margin-top: 20px;
+}
+
+.color-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-circle:hover {
+    transform: scale(1.1);
+}
+
+.color-circle.selected {
+    border: 3px solid #4A00E0;
+}
+
+/* Amount Selection */
+.product-amount {
+    margin-top: 20px;
+}
+
+.amount-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4A00E0;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 300px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.amount-select::-ms-expand {
+    display: none;
+}
+
+.amount-select::after {
+    content: '▼';
+}
+
+/* Button Styling */
+.add-to-bag {
+    margin-top: 20px;
+    background-color: #4A00E0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-bag:hover {
+    background-color: #6949a8;
+}
+
+/* Custom select dropdown arrow */
+.amount-select-container {
+    position: relative;
+    display: inline-block;
+}
+
+.amount-select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #9c9898;
+}
+
+/* Responsive Design: Stack image and product info vertically on smaller screens */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product-info {
+        margin-left: 0;
+        text-align: left;
+    }
+}

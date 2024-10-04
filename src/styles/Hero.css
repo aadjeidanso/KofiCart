@@ -1,0 +1,73 @@
+/* src/styles/Hero.css */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background-color: #f9f9f9;
+}
+
+.hero-content {
+    /* max-width: 50%; */
+    align-items: left;
+    display: flex;
+        /* Use flexbox */
+    flex-direction: column;
+        /* Align elements vertically */
+    justify-content: left;
+        /* Center elements vertically */
+}
+
+.hero h1 {
+    max-width: 60%;
+    font-size: 2.5rem;
+    color: #2b3d50;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.hero p {
+    max-width: 60%;
+    margin: 20px 0;
+    color: #666;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.hero-btn {
+    /* max-width: 50%; */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    white-space: nowrap
+}
+
+.hero-btn:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #0471e7;
+
+}
+.hero-image {
+    flex: 1;
+    /* Allow the image to take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    /* Adjust width as needed */
+    max-width: 500px;
+    /* Set a maximum width */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

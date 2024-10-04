@@ -1,0 +1,112 @@
+/* src/styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 246, 255, 255);
+    padding: 10px 50px;
+    position: relative;
+    /* For positioning the menu */
+}
+
+.logo {
+    margin-left: 2rem;
+    font-size: 24px;
+    color: white;
+    background-color: #008cff;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide nav links and show burger menu on smaller screens */
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Nav links for larger screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 3rem;
+}
+
+/* Nav links for smaller screens */
+.nav-links.active {
+  
+    display: flex;
+        /* Changed to flex for easier spacing */
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 24px;
+        /* Add spacing between the links */
+    position: absolute;
+    top: 60px;
+    /* Adjust based on the navbar height */
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+/* src/styles/Navbar.css */
+.nav-links a.active-link {
+    background-color: #001f3f;
+    /* Darker blue */
+    color: white;
+}
+
+.nav-links a:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: black;
+}
+
+.cart-icon {
+    position: relative;
+    color: white;
+    margin-left: 10px;
+    margin-right: 3rem;
+}
+.cart-icon:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+    /* Transparent gray background */
+    cursor: pointer;
+    /* Show pointer on hover */
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    border-radius: 50%;
+    padding: 1px 6px;
+    color: white;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide nav links initially */
+        flex-direction: column;
+    }
+
+    .burger-menu {
+        display: block;
+        /* Show burger menu on small screens */
+    }
+}

@@ -1,0 +1,61 @@
+/* src/styles/About.css */
+.about-section {
+    padding: 60px 80px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-content {
+    max-width: 50%;
+    padding-left: 40px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #2b3d50;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        /* Stack the image and content vertically */
+        align-items: center;
+        /* Center the content */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .about-content {
+        max-width: 100%;
+        /* Take full width */
+        padding-left: 0;
+        /* Remove left padding */
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+        /* Add some space between the image and the content */
+    }
+}

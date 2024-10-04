@@ -1,0 +1,76 @@
+/* src/styles/SignIn.css */
+.sign-in-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.sign-in-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.sign-in-container h2 {
+    font-size: 2rem;
+    color: #2b3d50;
+    margin-bottom: 20px;
+}
+
+.sign-in-container label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+.sign-in-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-button,
+.guest-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.guest-button {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

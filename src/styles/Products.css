@@ -1,0 +1,118 @@
+/* src/styles/Products.css */
+.products-page {
+    padding: 80px 100px;
+    background-color: #fff;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f1f5f8;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+/* Style for each filter group (label + input/select) */
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-bottom: 2rem;
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filters input[type="text"],
+.filters select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.price-filter {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.search-button,
+.reset-button {
+    width: 280px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.reset-button {
+    background-color: #d63384;
+    color: white;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px 0;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}
+
+/* Styling for individual product cards */
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+   
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #2b3d50;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Adjust filters for smaller screens */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+}

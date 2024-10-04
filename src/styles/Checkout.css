@@ -1,0 +1,122 @@
+/* src/styles/Checkout.css */
+.checkout-page {
+    padding: 60px 80px;
+    background-color: #fff;
+}
+
+/* Nothing to checkout message */
+.empty-checkout {
+    font-size: 3rem;
+    color: #2b3d50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Existing styles... */
+
+.checkout-page h2 {
+    font-size: 2rem;
+    color: #2b3d50;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Checkout Content Layout */
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Shipping Information Form */
+.shipping-info {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-info h3 {
+    font-size: 1.5rem;
+    color: #2b3d50;
+    margin-bottom: 20px;
+}
+
+.shipping-info label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.shipping-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Order Summary */
+.cart-summary {
+    width: 300px;
+    background-color: #f1f5f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h4 {
+    font-size: 1.5rem;
+    color: #2b3d50;
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.cart-summary h3 {
+    font-size: 1.5rem;
+    color: #2b3d50;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Checkout Button */
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .checkout-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-summary {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
